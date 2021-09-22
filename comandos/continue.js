@@ -2,8 +2,8 @@ const Discord = require('discord.js');
 const distube = require('distube');
 
 module.exports = {
-  name: "pausa",
-  alias: ["pause"],
+  name: "continuar",
+  alias: ["continue"],
 
 execute (client, message, args){
 
@@ -15,10 +15,10 @@ execute (client, message, args){
 
     if(!serverQueue) return message.channel.send("No hay canción reproduciendose ahora")
 
-    if(serverQueue.pause) return message.channel.send("Ya la canción esta en pausa")
+    if(!serverQueue.pause) return message.channel.send("Ya la canción no esta en pausa")
 
-    client.distube.pause(message)
-    message.channel.send("La canción esta puso en pausa")
+    client.distube.resume(message)
+    message.channel.send("La cancion se reanudó de nuevo")
  }
 
 }

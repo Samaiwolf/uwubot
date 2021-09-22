@@ -59,7 +59,7 @@ client.distube.on("addSong", (message, queue, song) => message.channel.send(`Añ
 
 client.distube.on("playSong", (message, queue, playsong) => message.channel.send(`Reproduciendo ahora, **${playsong.name}** **${playsong.formattedDuration}** **${message.author}**`))
 
-client.distube.on("playList", (message, queue, playlist) => message.channel.send(`Reproduciendo playlist:\n **${song.name}** **${song.formattedDuration}** **${message.author}`))
+client.distube.on("playList", (message, queue, playlist) => message.channel.send(`Reproduciendo playlist:\n **${playlist.name}** **${message.author}`))
 
 client.distube.on('intiQueue', (queue) => {
   queue.autoplay = false;
