@@ -1,0 +1,28 @@
+Proyecto de crear un bot para discord que pudiera reproducir musica en lo posible.
+
+-nombre: "uwumusic"
+-version: "0.1.0"
+-descripsion: "Bot de musica UwU"
+-autor: "SamaiWolf"
+-Paquetes
+    "@discordjs/opus": "^0.5.3"
+    "discord.js": "^12.5.3"
+    "distube": "^2.8.18"
+    "ffmpeg-static": "^4.4.0"
+    "fs": "^0.0.1-security"
+    "ytdl-core": "^4.9.1"
+
+comienzo 15/9/21
+Resumen de mi trayectoria.
+dia 1 y 2: comienzo el proyecto pero no lograba hacer que el bot encendiera para poder seguir avanzando
+    el error estaba en el estaba utilizando el discord.js v13. y luego cuando lo cambie a discord.js v12.5.3 se soluciono y todo funciono de maravilla.
+    el error que me aparecia en concola era el siguiente ['CLIENT_MISSING_INTENTS].
+dia 3: luego de hacer que funcionara empeze a meterle algunos comandos ya que era la primera vez que hacia un bot y aprendia .js y node
+    pude hacer que reconozca el mensaje hola pero no reconocia el comando !ping, era un problema de tipografia xD
+dia 4: luego de corregir todo eso directamente cree una carpeta de comandos y ahi empeze a crear dos comandos, !help y !ping.
+    !help funcionaba re 10 pero !ping hacia que muriera el bot. estuve todo el dia intentando de saber que era pero me habia rendido luego de un tiempo.
+dia 5: puse a ver bien todo y era otro problema de tipografia, segui haciendo algunos otros comandos y poniendo (console.log) para que me vaya diciendo cada vez que se activara algun comando.
+    resulta que estaba por subirlo al repocitorio remoto en github, pero hubo un fallo que no se queria subir, perdi todo el progreso de este dia..
+dia 6: luego de arreglar ese problema con git empeze agregar algunos comandos nuevos que no habia visto antes como el !avatar y !say
+    donde el avatar dejaba ver la imagen de alguien que etiquetabas o del mismo usuario y say que hacia escribir "X" palabra al bot, bastate buenos ambos
+    luego me puse a instalar algunos paquetes para ya empezar a ver que el bot pueda reproducir musica.

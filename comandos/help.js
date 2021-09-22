@@ -5,8 +5,12 @@ module.exports = {
   alias: [],
 
 execute (client, message, args){
-    message.channel.send("Esta es la lista de comandos")
-    message.channel.send("/ping")
+  
+  console.log("Se ejecuto el comando !help")
+
+  message.channel.send("Esta es la lista de comandos:\n !ping -- el bot dira pong.\n !say -- El bot dira lo mismo que escribiste.\n !avatar -- mostrara la imagen del usuario solisitado.")
+
+  console.log("Se termino de ejecutar el comando !help")
 
 
  }

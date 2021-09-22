@@ -5,8 +5,12 @@ module.exports = {
   alias: [],
 
 execute (client, message, args){
-    message.channel.send("pong!")
+    
+  console.log("Se ejecuto el comando !ping")
 
+  message.channel.send("pong!")
+
+  console.log("Se ejecuto el comando !ping")
 
  }
 
