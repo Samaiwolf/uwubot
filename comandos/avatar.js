@@ -5,7 +5,7 @@ module.exports = {
   alias: [],
 
 execute (client, message, args){
-    console.log("Se ejecuta el comando !avatar")
+   /* console.log("Se ejecuta el comando !avatar")
     const usuario = message.mentions.members.first() || message.member
 
     const embed = new Discord.MessageEmbed()
@@ -15,7 +15,8 @@ execute (client, message, args){
     .setColor("RANDOM")
     
     message.channel.send(embed)
-    console.log("Se termino de ejecutar el comando !avatar")
+    console.log("Se termino de ejecutar el comando !avatar") */
+    message.channel.send("Este comando esta inabilitado para esta vercion de prueba :ok_hand:")
  }
 
 }

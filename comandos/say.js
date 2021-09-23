@@ -5,7 +5,7 @@ module.exports = {
   alias: [],
 
 execute (client, message, args){
-    
+/*  
     console.log("Se ejecuto el comando !say")
 
     const texto = args.join(' ')
@@ -14,6 +14,9 @@ execute (client, message, args){
     message.channel.send(texto)
 
     console.log("Se termino de ejecutar el comando !say")
+*/
+    message.channel.send("Este comando esta inabilitado para esta vercion de prueba :ok_hand:")
+
  }
 
 }

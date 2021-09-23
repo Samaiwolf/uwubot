@@ -7,6 +7,7 @@ module.exports = {
 
 execute (client, message, args){
 
+  /*
     if(!message.member.voice.channel) return message.channel.send("Debes estar en un canal de voz")
     if(message.guild.me.voice.channel && message.member.voice.channel.id !== message.guild.me.voice.channel.id)
     return message.channel.send("Debes estar en el mismo canal que yo")
@@ -19,6 +20,9 @@ execute (client, message, args){
 
     client.distube.pause(message)
     message.channel.send("La canción esta puso en pausa")
+    */
+    message.channel.send("Este comando esta inabilitado por fallas :ok_hand:")
+
  }
 
 }

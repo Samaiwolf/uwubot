@@ -26,7 +26,8 @@ client.on("ready", () => {
     presence();
 });
 client.on("message", (message) => {
-    let prefix = config.prefix;
+  
+  let prefix = config.prefix;
 
     if (message.author.bot || !message.content.startsWith(prefix))return;
     
@@ -40,7 +41,7 @@ client.on("message", (message) => {
     let cmd = client.commands.find((c) => c.name === command || c.alias && c.alias.includes(command));
     if(cmd){
       cmd.execute(client, message, args)
-    }
+     }
 
   })
 // Distube // 
@@ -48,9 +49,10 @@ const Distube = require('distube');
 client.distube = new Distube(client,{
   emitNewSongOnly: true,
   searchSongs: false,
-  leaveOnStop: false,
+  leaveOnStop: true,
   leaveOnFinish: true,
   leaveOnEmpty: true,
+  autoplay:false,
 });
 
 client.distube.on("addList", (message, queue, playlist) => message.channel.send(`Playlist:\n **${playlist.name}** ***${message.author}*** `))
