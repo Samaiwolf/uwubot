@@ -1,7 +1,7 @@
 Proyecto de crear un bot para discord que pudiera reproducir musica en lo posible.
 
 -nombre: "uwumusic"
--version: "0.2.0"
+-version: "0.2.1"
 -descripsion: "Bot de musica UwU"
 -autor: "SamaiWolf"
 -Paquetes
@@ -29,11 +29,14 @@ dia 6: luego de arreglar ese problema con git empeze agregar algunos comandos nu
 dia 7: pude hacer que el bot pueda reproducir musica y ahora tiene un comando !play para reproducirlo
     si o si el usuario debe estar en el canal de voz para que el bot entre a dicho canal y pueda reproducir musica.
     todavia no tiene pausa ni stop, pero funciona que es lo importante.
-    *-BUG-agrege la pausa y el continue, encontre un -BUG- donde si no encuentra una cancion el bot deja de funcionar.
-    *-BUG-parece haber otro -BUG- donde al poner pausa y luego continuar se tilda? o se cursea la cancion.. 
-    *-BUG- el bot reproduce musica solo luego de la primera cancion.. 
-    *-BUG- si el bot no reconoce la cancion o no la encuentra se rompe el bot.. 
-    *-BUG- al parecer el que invoca el bot con su comando, luego en las otras canciones que pongan otras personas lo etiqueta a el..
+    *1-BUG-agregue la pausa y el continue, encontre un -BUG- donde si no encuentra una cancion el bot deja de funcionar.
+    *2-BUG-parece haber otro -BUG- donde al poner pausa y luego continuar se tilda? o se cursea la cancion.. 
+    *3-BUG- el bot reproduce musica solo luego de la primera cancion.. 
+    *4-BUG- si el bot no reconoce la cancion o no la encuentra se rompe el bot.. 
+    *5-BUG- al parecer el que invoca el bot con su comando, luego en las otras canciones que pongan otras personas lo etiqueta a el..
     luego de agregar algunos comandos y poder hacer que el bot saliera con el comando !stop voy a hacer la primera prueba en otro servidor.
     inabilite los otros comandos que no son para la music y que no haga interferencia con la funcionalidad principal.
-    
+dia 8: V 0.2.1, agregue el comando !skip y mejore el comando !stop o !leave.
+    *1,2-BUG-* desactive los comandos !pausa y !continue hasta poder encontrar el error (aunque no son muy necesarios estos comandos)
+    parece ser que el *4-BUG- pasa tambien si tiene un apostrofe o coma en el texto..
+
